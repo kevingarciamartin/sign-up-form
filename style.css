@@ -1,0 +1,15 @@
+:root {
+    --clr-neutral-300: #E5E7EB;
+    --clr-neutral-800: #313131;
+
+    --clr-blue-400: blue;
+    --clr-green-700: #596D48;
+    --clr-red-400: red;
+
+    --clr-btn: var(--clr-green-700);
+    --clr-border: var(--clr-neutral-300);
+    --clr-border-invalid: var(--clr-red-400);
+    --clr-border-focus: var(--clr-blue-400);
+    --clr-logo-background: var(--clr-neutral-800);
+}
+
