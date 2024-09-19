@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sign-up Form</title>
   </head>
   <body>
     <div class="page-container">
       <aside>
+        <img src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="" />
         <div class="logo-container">
           <svg
             id="logo-15"
-            width="49"
-            height="48"
             viewBox="0 0 49 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@
               fill="#17CF97"
             ></path>
           </svg>
-          <h1>Name</h1>
+          <h1>LeafLogic Solutions</h1>
         </div>
         <p class="image-credit">
           Photo by
@@ -52,47 +52,57 @@
       </aside>
 
       <main>
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started.
-        </p>
-        <p>You <span class="italic">know</span> you want to.</p>
-        <form action="">
-          <div class="form-layout">
-            <p>Let's do this!</p>
-            <div>
-              <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" />
+        <section>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>
+            Sign up
+            <span class="italic">now</span>
+            to get started.
+          </p>
+          <p>You <span class="italic">know</span> you want to.</p>
+        </section>
+        <section>
+          <form action="">
+            <div class="form-background">
+              <p>Let's do this!</p>
+              <div class="form-layout">
+                <div>
+                  <label for="first-name">First Name</label>
+                  <input type="text" name="first-name" id="first-name" />
+                </div>
+                <div>
+                  <label for="last-name">Last Name</label>
+                  <input type="text" name="last-name" id="last-name" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div>
+                  <label for="phone-number">Phone Number</label>
+                  <input type="tel" name="phone-number" id="phone-number" />
+                </div>
+                <div>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" />
+                </div>
+                <div>
+                  <label for="confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="confirm-passwor"
+                    id="confirm-password"
+                  />
+                </div>
+              </div>
             </div>
-            <div>
-              <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
-            </div>
-            <div>
-              <label for="phone-number">Phone Number</label>
-              <input type="tel" name="phone-number" id="phone-number" />
-            </div>
-            <div>
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
-            </div>
-            <div>
-              <label for="confirm-password">Confirm Password</label>
-              <input
-                type="password"
-                name="confirm-passwor"
-                id="confirm-password"
-              />
-            </div>
-          </div>
-          <input type="submit" value="Create Account" />
-        </form>
-        <p>Already have an account? <a href="#">Log in</a></p>
+            <input type="submit" value="Create Account" />
+          </form>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </section>
       </main>
     </div>
   </body>
