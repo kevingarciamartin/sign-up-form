@@ -182,6 +182,49 @@
               color: var(--clr-text-secondary);
               font-size: var(--fs-300);
               text-transform: uppercase;
+
+              .tooltip {
+                --tooltip-color: var(--clr-neutral-600);
+
+                position: relative;
+                display: inline-block;
+
+                .tooltip-text {
+                  visibility: hidden;
+                  width: 200px;
+                  background-color: var(--tooltip-color);
+                  color: var(--clr-neutral-100);
+                  padding: 0.5rem;
+                  border-radius: 5px;
+                  text-transform: initial;
+
+                  position: absolute;
+                  z-index: 1;
+                  bottom: 125%;
+                  left: -50%;
+                  margin-left: -60px;
+
+                  opacity: 0;
+                  transition: opacity 300ms;
+
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: var(--tooltip-color) transparent transparent
+                      transparent;
+                  }
+                }
+
+                &:hover .tooltip-text {
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
             }
 
             input {
@@ -190,7 +233,7 @@
               box-shadow: 0 0 0 0 transparent;
               padding: 0.5ch 1ch;
               transition: box-shadow 200ms ease;
-              
+
               &:focus {
                 border-color: var(--clr-border-focus);
                 box-shadow: 0 2px 5px -1px var(--clr-shadow);
