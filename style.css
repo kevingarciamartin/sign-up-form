@@ -182,6 +182,7 @@
               color: var(--clr-text-secondary);
               font-size: var(--fs-300);
               text-transform: uppercase;
+              order: 1;
 
               .tooltip {
                 --tooltip-color: var(--clr-neutral-600);
@@ -234,6 +235,7 @@
               box-shadow: 0 0 0 0 transparent;
               padding: 0.5ch 1ch;
               transition: box-shadow 200ms ease;
+              order: 2;
 
               &:focus {
                 border-color: var(--clr-border-focus);
@@ -248,6 +250,10 @@
               &:focus:invalid {
                 border-color: var(--clr-border-focus);
               }
+            }
+
+            input[required] + label span:first-of-type::after {
+              content: "*";
             }
           }
         }
