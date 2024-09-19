@@ -70,25 +70,24 @@
               <p>Let's do this!</p>
               <div class="form-layout">
                 <div>
-                  <label for="first-name">First Name</label>
                   <input
                     type="text"
                     name="first-name"
                     id="first-name"
                     placeholder="John"
                   />
+                  <label for="first-name"><span>First Name</span></label>
                 </div>
                 <div>
-                  <label for="last-name">Last Name</label>
                   <input
                     type="text"
                     name="last-name"
                     id="last-name"
                     placeholder="Doe"
                   />
+                  <label for="last-name"><span>Last Name</span></label>
                 </div>
                 <div>
-                  <label for="email">Email</label>
                   <input
                     type="email"
                     name="email"
@@ -97,9 +96,9 @@
                     placeholder="email@address.com"
                     required
                   />
+                  <label for="email"><span>Email</span></label>
                 </div>
                 <div>
-                  <label for="phone-number">Phone Number</label>
                   <input
                     type="tel"
                     name="phone-number"
@@ -107,12 +106,22 @@
                     pattern="\d{3}[\-\s]?\d{3}[\s]?\d{2}[\s]?\d{2}"
                     placeholder="070-123 45 67"
                   />
+                  <label for="phone-number"><span>Phone Number</span></label>
                 </div>
                 <div>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    minlength="8"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}"
+                    placeholder="Must be at least 8 characters"
+                    required
+                  />
                   <label for="password">
-                    Password
+                    <span>Password</span>
                     <div class="tooltip">
-                      <span>&#10068;</span>
+                      <div>&#10068;</div>
                       <span class="tooltip-text">
                         Password must be at least 8 characters long and include
                         all of the following:
@@ -125,18 +134,8 @@
                       </span>
                     </div>
                   </label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    minlength="8"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}"
-                    placeholder="Must be at least 8 characters"
-                    required
-                  />
                 </div>
                 <div>
-                  <label for="confirm-password">Confirm Password</label>
                   <input
                     type="password"
                     name="confirm-passwor"
@@ -146,6 +145,9 @@
                     placeholder=""
                     required
                   />
+                  <label for="confirm-password">
+                    <span>Confirm Password</span>
+                  </label>
                 </div>
               </div>
             </div>
